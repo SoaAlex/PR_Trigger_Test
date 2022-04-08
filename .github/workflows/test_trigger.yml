@@ -1,10 +1,6 @@
 name: Rollback if failure
 on: 
-  workflow_dispatch:
-  pull_request:
-    types: [closed]
-    branches:    
-      - main
+  push
 
 jobs:
   call-rollback-if-failure-workflow:
